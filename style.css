@@ -1,0 +1,114 @@
+/* Reset & Global Styles */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0f172a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #e6eef8;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+/* Main Card */
+.main {
+  background-color: #0b1220;
+  width: 600px;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.3);
+}
+
+/* Flex container for two sections */
+.container {
+  display: flex;
+  gap: 20px;
+}
+
+/* Left side - form */
+.left {
+  flex: 1;
+}
+header {
+  margin-bottom: 15px;
+}
+header h1 {
+  margin-bottom: 5px;
+}
+header p {
+  font-size: 0.9rem;
+  color: #94a3b8;
+}
+
+/* Input fields */
+.info {
+  display: flex;
+  flex-direction: column;
+}
+input {
+  background-color: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: #e6eef8;
+  width: 150px;
+  margin: 10px 0;
+  padding: 5px;
+  border-radius: 4px;
+}
+label {
+  font-size: 0.875rem;
+  color: #94a3b8;
+}
+
+/* Buttons */
+.control {
+  display: flex;
+  gap: 1rem;
+}
+#calcBtn {
+  padding: 6px 12px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-weight: 600;
+  background-color: #7c3aed;
+  color: #e6eef8;
+  box-shadow: 0 6px 16px rgba(124, 58, 237, 0.18);
+  transition: 0.2s;
+}
+#calcBtn:hover {
+  background-color: #6d28d9;
+}
+#resetBtn {
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  color: #94a3b8;
+  font-weight: 600;
+  cursor: pointer;
+  padding: 6px 12px;
+  border-radius: 5px;
+  transition: 0.2s;
+}
+#resetBtn:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* Right side - result */
+.result-box {
+  flex: 1;
+  background-color: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 6px;
+  padding: 15px;
+}
+.result-box h2 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+.result-box p {
+  margin: 5px 0;
+}
